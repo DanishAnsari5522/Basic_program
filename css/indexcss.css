@@ -1,0 +1,152 @@
+body{
+    background:#e7e7e7;
+       margin:0;
+       padding:0; 
+       color:black;
+       box-sizing: border-box;
+    
+    }
+    
+    a{
+        text-decoration:none;
+        color:black;
+    }
+    li{
+        list-style: none;
+    }
+    .header{
+        background:#ee5253;
+        width:100%;
+        height:60px;
+        position:fixed;
+        box-shadow:0 1px 0px 1px black;
+        z-index:10;
+        }
+        
+        
+        
+        .main{
+            height:100%;
+            margin-top:60px;
+            padding:10px 50px;
+        }
+        
+        #sidebarMenu{
+        height:100%;
+        position:fixed;
+        left:0;
+        top:0;
+        width:250px;
+        margin-top:60px;
+        background:#2e86de;	
+        transform:translateX(-250px);
+        transition:tansform 250ms ese-in-out;
+        }
+        
+        
+        #opensidebarMenu:checked ~ #sidebarMenu{
+            transform:translateX(0px);
+        }
+        
+        .menu{
+            list-style:none;
+            padding:0;
+            margin:0px;
+        }
+        
+        .menu li{
+            color:#fff;
+            margin-left:5%;
+            border-bottom:1px solid red;
+            line-height:50px;  /*for the space between to li or text*/
+        }
+        
+        .menu li a{
+        color:#fff;
+        display:block;
+        text-decoration:none;
+        
+        }
+        
+        
+        .sidebarIconToggle
+        {
+            
+            height:22px;
+            width:22px;
+            position:fixed;
+            z-index:20;
+            top:22px;
+            left:15px;
+            cursor:pointer;
+            
+        }
+        
+        .spinner{
+            height:3px;
+            background:#fff;
+            transition:all 0.3s;
+        }
+        
+        .spinner.middle,
+        .spinner.bottom{
+        margin-top:3px;
+        }
+        
+        
+        #opensidebarMenu:checked ~ .sidebarIconToggle >	.spinner.middle{	
+        opacity:0;
+        }
+            
+        #opensidebarMenu:checked ~ .sidebarIconToggle >	.spinner.top{	
+        transform:rotate(130deg);
+        margin-top:9px;
+        }
+        
+        #opensidebarMenu:checked ~ .sidebarIconToggle >	.spinner.bottom{	
+        transform:rotate(-130deg);
+        margin-top:-9px;
+        }
+    
+        /* for the contenst parts*/
+        #content1{
+            background: white;
+            margin-top:0px;
+            width:70%;
+            margin:0 50px;
+            box-shadow:10px 10px 10px 10px rgb(219, 217, 217);
+            float:left;
+            border-radius:10px;
+            padding:10px;
+            }
+        #forul{
+        background: white;
+        box-shadow:10px 10px 10px 10px rgb(219, 217, 217);
+        float:left;
+        border-radius: 10px;
+        padding:10px;
+        height:500px;
+        line-height:40px;
+        font-size:20px;
+     
+    
+    }
+        /* for the footer part*/
+        #footer{
+            margin-top:150px;
+            background:#a80a12;
+            width:100%;
+            float:left;
+            box-align:center;
+            border-radius: 10px;
+            padding:20px;
+            box-shadow:0 10px 4px 5px rgb(219, 217, 217);
+            color:white;
+            font-style:monospace;
+            box-sizing: border-box;
+            z-index:7;
+        }
+    
+    
+        /*for the left sidebar*/
+        

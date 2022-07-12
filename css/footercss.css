@@ -1,0 +1,42 @@
+*{
+    padding:0;
+    margin:0;
+    
+
+}
+.footer1{
+    background: #a80a12;
+}
+
+#footer{
+    position: absolute;
+    margin-top:1000px;
+    background:#a80a12;
+    width:100%;
+    float:left;
+    box-align:center;
+    border-radius:0px;
+    padding:20px;
+    /*box-shadow:0 10px 0px 1px black;*/
+    color:white;
+    font-style:monospace;
+    box-sizing: border-box;
+    z-index:7;
+}
+
+@media screen and (max-width:900px)
+{
+    #footer{
+        margin-top:1100px;
+    }
+
+
+}
+
+@media screen and (max-width:600px)
+{
+    
+    #footer{
+        margin-top: 1600px;
+    }
+}
